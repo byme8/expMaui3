@@ -1,7 +1,7 @@
 ﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="expMaui3.MainPage">
-    <Grid>
+    <Grid BackgroundColor="Red">
         <Button
             x:Name="CounterBtn"
             Text="Click me"
@@ -10,7 +10,7 @@
             VerticalOptions="Start"
             HorizontalOptions="Center" />
 
-        <ContentView Margin="0, 50" MinimumHeightRequest="400" Background="Orange" VerticalOptions="Start" x:Name="ContentView" />
+        <ContentView Margin="0, 50" Background="Blue" VerticalOptions="Fill" HorizontalOptions="Fill" x:Name="ContentView" />
 
     </Grid>
 </ContentPage>

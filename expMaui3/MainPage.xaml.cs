@@ -21,22 +21,12 @@ public partial class MainPage : ContentPage
             })
             .ToArray();
 
-        var stack = new VerticalStackLayout()
-        {
-        };
-
+        var stack = new VerticalStackLayout();
         foreach (var chip in chips)
         {
             stack.Children.Add(chip);
         }
 
-        var scroll = new ScrollView()
-        {
-            HeightRequest = 400,
-            BackgroundColor = Colors.Red,
-            Content = stack
-        };
-
-        ContentView.Content = scroll;
+        ContentView.Content = stack;
     }
 }
